@@ -15,4 +15,21 @@ publish:
         username: hootster
         password: cisco123
         email: hermanchao@yahoo.com
+deploy:
+    webhook:
+        image: plugins/drone-webhook
+        skip_verify: true
+        method: POST
+        auth:
+            username: CICD1
+            password: CICD1
+        urls:
+            - https://control.sandbox.imapex.io/marathon/v2/apps/class/hootster/restart?force=true
+notify:
+    spark:
+        image: hpreston/drone-spark
+        auth_token: Mzc3OGNlMTMtOWYzZi00NzYxLWIxOWUtM2Q3MTk0OTdhMDI0ODIzMjZhODYtNDNj
+        roomId: Y2lzY29zcGFyazovL3VzL1JPT00vODVmMzAzNTAtMTQwNC0xMWU3LTkxZWQtNjMzYWE4Y2FkZDNj
+
+
 
