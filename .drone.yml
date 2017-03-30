@@ -8,3 +8,11 @@ build:
         commands:
             - pip install -r requirements.txt
             - python testing.py
+publish:
+    docker:
+        repo: Hootster/cicd_demoapp
+        tag: latest
+        username: hootster
+        password: Bl$271339
+        email: hermanchao@yahoo.com
+
