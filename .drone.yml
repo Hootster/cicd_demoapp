@@ -10,7 +10,7 @@ build:
             - python testing.py
 publish:
     docker:
-        repo: Hootster/cicd_demoapp
+        repo: hootster/cicd_demoapp
         tag: latest
         username: hootster
         password: Bl$271339
