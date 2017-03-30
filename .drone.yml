@@ -13,6 +13,6 @@ publish:
         repo: hootster/cicd_demoapp
         tag: latest
         username: hootster
-        password: Bl$271339
+        password: cisco123
         email: hermanchao@yahoo.com
 
